@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import UseCanvas from "./pages/useCanvas";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Main from "./pages/Main";
+import Canvas from "./components/Canvas"
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<>
+			{/* <UseCanvas></UseCanvas> */}
+			{/* <BrowserRouter> */}
+			<UseCanvas>
+			{/* <Canvas> */}
+			<Main></Main>
+      {/* </Canvas> */}
+			<h1>sdflsdjfsldkfjsdlfjsdlfk</h1>
+			</UseCanvas>
+			{/* </BrowserRouter> */}
+		</>
+	);
 }
 
 export default App;
